@@ -10,3 +10,61 @@ Updated: 2017-08-19 21:54:26
 
 */
 
+/******* GENERAL *******/
+.kad-btn-primary {
+  text-align: center;
+}
+
+.nopadding {
+  padding: 0;
+}
+/******* STAFF PAGE ******/
+.staff_item {
+  padding: 25px 0 0;
+}
+
+.staff_item img {
+  display: block;
+}
+
+.staff_item h3, .staff_item .kt-staff-title {
+  text-align: center;
+}
+
+/******* PROPERTY PAGE *******/
+.property_status {
+  padding: 12px 0;
+  border-bottom: 1px solid #26a7f2;
+}
+
+.status {
+  font-weight: bold;
+  color: #444;
+}
+
+.property_mls_number {
+  float: right;
+}
+
+.property_general_info {
+  padding: 12px 0;
+  border-bottom: 1px solid #26a7f2;
+  list-style-type: none;
+  margin: 0;
+}
+
+.property_type_label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.property_location_label {
+  font-weight: bold;
+  color: #444;
+}
+
+.property_location {
+  padding: 12px 0 ;
+  border-bottom: 1px solid #26a7f2;
+}

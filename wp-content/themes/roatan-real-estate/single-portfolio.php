@@ -220,6 +220,27 @@
             <span class="property_island"><?php echo get_field_object("island")['choices'][get_field("island", $post)];?>,</span>
             <span class="property_city"><?php echo get_field("city", $post);?></span>
           </div>
+          <div class="listing_agent">
+            <?php
+              $agent = get_field('listing_agent');
+              $agent_mail = get_post_meta( $agent[0]->ID, '_kad_staff_email', true );
+              $agent_phone = get_post_meta( $agent[0]->ID, '_kad_staff_phone', true );
+            ?>
+            <p class="agent">Agent: <?php echo $agent[0]->post_title ?></p>
+            <div class="agent_contact_info">
+              <?php
+              if(!empty($agent_email)) {
+                  echo '<a href="mailto:'.esc_attr($agent_email).'" target="_blank" class="email_link" data-toggle="tooltip" data-placement="top" data-original-title="'.__('Email', 'pinnacle').' '.$agent[0]->post_title.'">';
+                  echo '<i class="kt-icon-mail4"></i>';
+                  echo '</a>';
+              }
+              if(!empty($agent_phone)) {
+                  echo '<a href="tel:'.esc_attr($agent_phone).'" target="_blank" class="phone_link" data-toggle="tooltip" data-placement="top" data-original-title="'.__('Call', 'pinnacle').' '.$agent[0]->post_title.'">';
+                  echo '<i class="kt-icon-mobile2"></i>';
+                  echo '</a>';
+              }?>
+            </div>
+          </div>
  				</div>
        </div>
        </div>

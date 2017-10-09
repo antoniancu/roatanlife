@@ -18,6 +18,10 @@ Updated: 2017-08-19 21:54:26
 .nopadding {
   padding: 0;
 }
+
+.postfeat.carousel_outerrim {
+  margin: 0;
+}
 /******* STAFF PAGE ******/
 .staff_item {
   padding: 25px 0 0;
@@ -67,4 +71,18 @@ Updated: 2017-08-19 21:54:26
 .property_location {
   padding: 12px 0 ;
   border-bottom: 1px solid #26a7f2;
+}
+
+.listing_agent {
+  padding: 12px 0;
+}
+
+.agent {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+i {
+  font-size: 25px;
 }

@@ -226,7 +226,9 @@
               $agent_mail = get_post_meta( $agent[0]->ID, '_kad_staff_email', true );
               $agent_phone = get_post_meta( $agent[0]->ID, '_kad_staff_phone', true );
             ?>
-            <p class="agent">Agent: <?php echo $agent[0]->post_title ?></p>
+            <a href="<?php echo esc_url(get_post_permalink($agent[0]->ID)); ?>">
+              <p class="agent">Agent: <?php echo $agent[0]->post_title ?></p>
+            </a>
             <div class="agent_contact_info">
               <?php
               if(!empty($agent_email)) {

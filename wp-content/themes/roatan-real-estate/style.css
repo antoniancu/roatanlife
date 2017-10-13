@@ -22,6 +22,24 @@ Updated: 2017-08-19 21:54:26
 .postfeat.carousel_outerrim {
   margin: 0;
 }
+
+/******* HOME PAGE *******/
+
+.home-widget-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-widget-box [class^="widget"]{
+  width: 25%;
+  height: auto;
+}
+
+.home-widget-box .kadence_image_widget_caption {
+  margin-top: 10px;
+}
+
 /******* STAFF PAGE ******/
 .staff_item {
   padding: 25px 0 0;
@@ -36,6 +54,10 @@ Updated: 2017-08-19 21:54:26
 }
 
 /******* PROPERTY PAGE *******/
+.portfolio-single ul {
+  line-height: 21px;
+}
+
 .property_status {
   padding: 12px 0;
   border-bottom: 1px solid #26a7f2;
@@ -85,4 +107,24 @@ Updated: 2017-08-19 21:54:26
 
 i {
   font-size: 25px;
+}
+
+/******** FOOTER ********/
+.kt-cta.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div[class^="kad-call-sitewide"], div[class*="kad-call-sitewide"] {
+  width: 100%;
+  float: none;
+  display: flex;
+  justify-content: center;
+}
+
+#containerfooter .col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

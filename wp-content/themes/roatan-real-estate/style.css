@@ -44,6 +44,23 @@ Updated: 2017-08-19 21:54:26
   margin-top: 10px;
 }
 
+.image-menu-image-size, .image-menu-image-size a.homepromolink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_menu_content {
+  position: static;
+  margin-top: 5px;
+}
+
+.image_menu_content .image_menu_message h4, .image_menu_content .image_menu_message h5 {
+  color: black;
+  margin: 0 auto;
+  width: 75%;
+}
+
 /******* STAFF PAGE ******/
 .staff_item {
   padding: 25px 0 0;
